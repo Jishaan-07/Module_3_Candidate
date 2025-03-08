@@ -12,11 +12,11 @@ const SideBar = () => {
   return (
     <>
        
-      <i onClick={handleShow} style={{cursor:'pointer'}} class="fa-solid fs-3 fa-bars mx-5"></i>
+      <i onClick={handleShow} style={{cursor:'pointer',color:'#F5F5F5'}} class="fa-solid fs-3 fa-bars mx-5"></i>
      
       <Offcanvas show={show} onHide={handleClose} backdrop="static">
-            <Offcanvas.Header closeButton>
-                <Offcanvas.Title style={{fontSize:'28px',color:'#002147'}}>Menu</Offcanvas.Title> 
+            <Offcanvas.Header style={{backgroundColor:'#002147'}} closeButton>
+                <Offcanvas.Title style={{fontSize:'28px',color:'#F5F5F5' ,backgroundColor:'#002147'}}>Menu</Offcanvas.Title> 
             </Offcanvas.Header>
             <hr />
             <Offcanvas.Body>
@@ -24,6 +24,8 @@ const SideBar = () => {
  
                     <Link className="nav-link my-2" to="/dashboard">Dashboard</Link> <hr />
                     <Link className="nav-link my-2" to="/">Candidate Onboarding</Link> <hr />
+                    <Link className="nav-link my-2" to="/candidate/enrollment_letter">Enrollment Letter</Link> <hr />
+ 
                      <Link className="nav-link my-2" to="/candidate/download_Id"> Download Digital ID </Link> <hr />
                     <Link className="nav-link my-2" to="/">Logout</Link>
                 </nav>

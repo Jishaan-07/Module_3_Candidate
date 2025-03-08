@@ -1,7 +1,7 @@
 import React from "react";
 import cmpny from "../assets/cmpny.png";
 import icon from "../assets/men.png";
-import signatureSample from "../assets/signatureSample.jpeg";
+import signID from "../assets/signID.png";
 import qr from "../assets/qr.png";
 const DigiID = () => {
     return (
@@ -10,7 +10,39 @@ const DigiID = () => {
                 <h1 style={{ color: "#002147", fontSize: "30px" }} className="py-5 fw-bold">
                     Candidate Digi-ID <hr />
                 </h1>
-                <div className="d-flex justify-content-center align-items-center mt-5">
+                <div style={{ width: '500px', height: '320px', border: 'solid #4A90E2 ' }} className=" rounded mt-5">
+                    <div className="container d-flex justify-between align-items-center">
+                        <h1 style={{ color: '#4A90E2' }} className="fw-bold fs-3 px-4 pt-4">Candidate ID</h1>
+                        <p className="pt-4">ID-15247 </p>
+                        
+                    </div>
+                   <div style={{color:'#4A90E2 fs-2'}} className="container"> <hr /></div>
+                    <div className="row">
+                        <div className="col-lg-5  " >
+                            <img className="img-fluid" width={'250px'} src={icon} alt="" />
+                             
+                           
+                        </div>
+                        <div className="col-lg-6 mt-5 text-justify">
+                            <p style={{ color: '#4A90E2' }}  className="">Name :<span className="fw-bold"> Max Miller</span></p>
+                            <p style={{ color: '#4A90E2' }}  className="">email :  <span className="fw-bold">max123@gmail.com</span></p>
+                            <p style={{ color: '#4A90E2' }}  className="">Phone : <span className="fw-bold"> +91 123 4564</span></p>
+                            <p style={{ color: '#4A90E2' }}  className="">Gender : <span className="fw-bold">Male</span></p>
+
+                        </div>
+<div className="container row">
+                           <div className="col-lg-7">
+                                <p className="mx-3 text-gray-600">Issued by : company name*</p>
+                                <p className="mx-3  text-gray-600">Valid Upto : 30/12/2025 </p>
+                           </div>
+                           <div className="col-lg-4 mb-5  ">
+                            <img  width={'120px'} src={signID} alt="" />
+                           </div>
+    
+</div>
+                    </div>
+                </div>
+                {/* <div className="d-flex justify-content-center align-items-center mt-5">
                     <div
                         className="rounded shadow"
                         style={{
@@ -67,7 +99,7 @@ const DigiID = () => {
 
 
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </>

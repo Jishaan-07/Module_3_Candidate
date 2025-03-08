@@ -9,6 +9,7 @@ import CandidateIdGenerate from './Pages/CandidateIdGenerate'
 import Pnf from './Pages/Pnf'
 import Header from './Components/Header'
 import SideBar from './Components/SideBar'
+import EnrollmentLetter from './Pages/EnrollmentLetter'
 function App() {
  
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route  path='/candidate/documentUpload' element={<CandidateUpload/>}  />
         <Route  path='/candidate/detailsReview' element={<CandidateReview/>}  />
         <Route  path='/candidate/download_Id' element={<CandidateIdGenerate/>}  />
+        <Route  path='/candidate/enrollment_letter' element={<EnrollmentLetter/>}  />
+
         <Route  path='*' element={<Pnf/>}  />
 
       </Routes>
